@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f2c14e;
+    /*highlighted background*/
+    --winning-blocks: #0d7fb8;
+}
+
+body {
+    color: var(--orange);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+}
+
+#gameboard {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border: 2px solid;
+
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: black;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+    
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
